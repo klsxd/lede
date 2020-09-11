@@ -1,4 +1,3 @@
-#!/bin/sh
 #
 # Copyright (C) 2014 OpenWrt.org
 #
@@ -42,6 +41,12 @@ at91_board_detect() {
 		;;
 	*"SAMA5D3 Xplained")
 		name="sama5d3_xplained"
+		;;
+	*"Atmel SAMA5D27 SOM1 EK")
+		name="sama5d27_som1_ek"
+		;;
+	*"Atmel SAMA5D2 PTC EK")
+		name="sama5d2_ptc_ek"
 		;;
 	*"SAMA5D2 Xplained")
 		name="sama5d2_xplained"
