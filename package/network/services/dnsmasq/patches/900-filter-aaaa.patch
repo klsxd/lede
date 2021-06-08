@@ -54,7 +54,7 @@ Subject: [PATCH] add filter-aaaa option
  	}
  
 +      /* patch to filter aaaa forwards */
-+      if (qtype == T_AAAA && option_bool(OPT_FILTER_AAAA) && strncmp(name, "edge.api.myqnapcloud.com", 24) != 0)
++      if (qtype == T_AAAA && option_bool(OPT_FILTER_AAAA) && strncmp(name, "edge.api.myqnapcloud.com", 24) != 0 && strcmp(name, "qcloud-pr-backend-390510218.us-east-1.elb.amazonaws.com") != 0)
 +        {
 +          /* return a null reply */
 +          ans = 1;
